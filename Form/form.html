@@ -11,7 +11,7 @@
     <main>
         <div id="loginForm">
             <h2>Log in</h2>
-            <form action="" method="post">
+            <form action="logForm.php" method="post">
                 <table>
                     <tr>
                         <td><label for="usernameLog">Username</label></td>
@@ -73,6 +73,10 @@
                 <p>Empty fields detected!</p>
                 <input type="submit" value="OK" id="ok2" onclick="invisible('insertError')">
             </div>
+        </div>
+        <div id="wrongPass">
+            <p>Wrong Username or Password</p>
+            <input type="submit" value="OK" id="ok3" onclick="invisible('wrongPass')">
         </div>
     </main>
    <!--<footer>

@@ -46,3 +46,5 @@ function passwordValidate(formElm){
     return childElms[0].value===childElms[1].value;
 }
 
+
+
