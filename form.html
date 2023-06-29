@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <main>
+        <div id="loginForm">
+            <h2>Log in</h2>
+            <form onsubmit="" action="" method="post">
+                <table>
+                    <tr>
+                        <td><label for="usernameLog">Username</label></td>
+                        <td>: <input type="text" name="usernameLog" id="usernameLog" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="passwdLog">Password</label></td>
+                        <td>: <input type="password" name="passwdLog" id="passwdLog" class="textInput"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="login" id="login" value="Log in">
+            </form>
+            <p>Don't have an account? <span id="regNow" onclick="transformForm()">Register Now!</span></p>
+        </div>
+        <div id="registerForm">
+            <h2>Register</h2>
+            <form onsubmit="" action="" method="post">
+                <table>
+                    <tr>
+                        <td><label for="fname">Fist Name</label></td>
+                        <td>: <input type="text" name="fname" id="fname" class="textInput"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td>: <input type="text" name="lname" id="lname" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>: <input type="email" name="email" id="email" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td>: <input type="date" name="dob" id="dob" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usernameReg">Username</label></td>
+                        <td>: <input type="text" name="usernameReg" id="usernameReg" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="passwdReg">Password</label></td>
+                        <td>: <input type="password" name="passwdReg" id="passwdReg" class="textInput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmPasswdReg">Confirm Password</label></td>
+                        <td>: <input type="password" class="textInput" name="confirmPasswdReg" id="confirmPasswdReg"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="register" id="register" value="Register">
+            </form>
+            <p>Already have an account? <span id="logNow"  onclick="transformForm()">Log in!</span></p>
+        </div>
+    </main>
+   <!--<footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>--> 
+    <script src="form.js"></script>
+</body>
+</html>
