@@ -11,7 +11,7 @@
     <main>
         <div id="loginForm">
             <h2>Log in</h2>
-            <form onsubmit="" action="" method="post">
+            <form action="" method="post">
                 <table>
                     <tr>
                         <td><label for="usernameLog">Username</label></td>
@@ -28,7 +28,7 @@
         </div>
         <div id="registerForm">
             <h2>Register</h2>
-            <form onsubmit="" action="" method="post">
+            <form onsubmit="return validate('regForm')" action="regForm.php" method="post" id="regForm">
                 <table>
                     <tr>
                         <td><label for="fname">Fist Name</label></td>
@@ -63,6 +63,16 @@
                 <input type="submit" name="register" id="register" value="Register">
             </form>
             <p>Already have an account? <span id="logNow"  onclick="transformForm()">Log in!</span></p>
+        </div>
+        <div id="errorcontainer">
+            <div id="passwdMatchStatus">
+                <p>Passwords Do not Match</p>
+                <input type="submit" value="OK" id="ok1" onclick="invisible('passwdMatchStatus')">
+            </div>
+            <div id="insertError">
+                <p>Empty fields detected!</p>
+                <input type="submit" value="OK" id="ok2" onclick="invisible('insertError')">
+            </div>
         </div>
     </main>
    <!--<footer>
