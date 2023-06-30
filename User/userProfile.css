@@ -55,7 +55,10 @@ input[type=submit],button{
     margin: auto;
     width: 200px;
 }
-
+#deleteForm{
+    width: 200px;
+    text-align: center;
+}
 #fetchBtn{
     margin: auto;
     font-weight: 700;

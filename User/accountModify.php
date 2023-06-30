@@ -40,6 +40,18 @@
         color: rgb(156, 156, 14);
         margin-top: 5%;
         }
+        footer{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid rgb(223, 223, 223);
+            margin: auto;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px rgb(223, 223, 223) ;
+            border-radius: 10px;
+            color: rgb(116, 116, 116);
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
