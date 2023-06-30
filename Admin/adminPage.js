@@ -119,4 +119,6 @@ function getUserName(rowid){
     return tdChild[1].innerHTML;
 }
   
-  
+function logout(){
+    window.location.href='../Form/form.html';
+}

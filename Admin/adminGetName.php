@@ -1,5 +1,7 @@
 <?php
     require_once('../dbconnect.php');
+    error_reporting(0);
+    ini_set('display_errors', 0);
 
     $username = $_POST['user'];
 
@@ -29,6 +31,7 @@
     <nav>
         <ul>
             <li onclick="gotoProfile()">Your Profile</li>
+            <li onclick="logout()">Logout</li>
         </ul>
     </nav>
     <main>
@@ -71,11 +74,11 @@
             <form id='deleteForm'action="" method='post' onsubmit = 'return accDeleteFinal()'>
                 <input type="submit" value="Delete" name="deleteBtn" id="deleteBtn">
             </form>
-            <form action="">
-                <input type="submit" value="Modify" name="modifyBtn" id="modifyBtn">
-            </form>
         </div>
     </main>
+    <footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>
     <script src="adminPage.js"></script>
 
 </body>

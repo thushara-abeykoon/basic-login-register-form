@@ -48,6 +48,9 @@
             <p>Account Updated Successfully! <a href="userPage.html?name=<?php echo $fname;?>&username=<?php echo $username;?>">Redirect</a> to the User page!</p>
         </div>
     </main>
+    <footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>
 </body>
 </html>
 
@@ -73,6 +76,18 @@
         color: rgb(140, 73, 14);
         margin-top: 5%;
         }
+        footer{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid rgb(223, 223, 223);
+            margin: auto;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px rgb(223, 223, 223) ;
+            border-radius: 10px;
+            color: rgb(116, 116, 116);
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +96,9 @@
             <p>User Not Found! <a href="../Form/form.html">Redirect</a> to the Login page!</p>
         </div>
     </main>
+    <footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>
 </body>
 </html>
 

@@ -9,6 +9,7 @@ if(name!= 'null' && username!=null){
 }
 else{
     header.innerHTML = "User Not Found!";
+    document.getElementById('main').style.display='none';
     userStatus = false;
 }
 
@@ -16,6 +17,11 @@ if(!userStatus){
     document.getElementById('header').style.backgroundColor = '#ffcccc';
     document.getElementById('fetchBtn').style.display = 'none';
 }
+
+function logout(){
+    window.location.href='../Form/form.html';
+}
+
 
 
 

@@ -10,6 +10,11 @@
         <header id="header">
             <h1 id="welcomeHeader">Welcome <span id="userName"></span></h1>
         </header>
+        <nav>
+            <ul>
+                <li onclick="logout()">Logout</li>
+            </ul>
+        </nav>
         <main>
             <form onsubmit="return fetchData()" action="userProfileFetch.php" method="get">
                 <input type="text" name="username" id="username" style="display: none;">
@@ -18,6 +23,9 @@
             </form>
             
         </main>
+        <footer>
+            <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+        </footer>
         <script src="userProfile.js"></script>
     </body>
 </html>

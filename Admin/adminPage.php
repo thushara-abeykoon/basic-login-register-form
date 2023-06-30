@@ -1,5 +1,7 @@
 <?php
     require_once('../dbconnect.php');
+    error_reporting(0);
+    ini_set('display_errors', 0);
     $count = 0;
     $arr = array();
     $query = "SELECT * FROM user_data;";
@@ -26,6 +28,7 @@
     <nav>
         <ul>
             <li onclick="gotoProfile()">Your Profile</li>
+            <li onclick="logout()">Logout</li>
         </ul>
     </nav>
     <main>
@@ -68,6 +71,9 @@
             <button onclick='accDeleteFinal()'>Delete</button>
         </div>
     </main>
+    <footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>
     <script src="adminPage.js"></script>
 
 </body>

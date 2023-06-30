@@ -1,6 +1,8 @@
 <?php
     require_once('../dbconnect.php');
 
+    error_reporting(0);
+    ini_set('display_errors', 0);
     $username = $_GET['username'];
 
     $query = "SELECT * FROM user_data WHERE username = '${username}';";
@@ -25,7 +27,12 @@
         <header id="header">
             <h1 id="welcomeHeader">Welcome <span id="userName"></span></h1>
         </header>
-        <main>
+        <nav>
+        <ul>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </nav>
+        <main id='main'>
             <table>
                 <?php
                     $row = mysqli_fetch_assoc($result);     
@@ -57,7 +64,7 @@
                 </tr>
             </table>
 
-            <div>
+            <div id="btnDiv">
                 
                     <input type="submit" value="Modify" id="modify"></form>
                 </form>
@@ -81,6 +88,9 @@
                 <button onclick='invisible("confirm")'>No</button>
             </div>
         </main>
+        <footer>
+        <p>Created by EUSL/TC/IS/2018/COM/31 : Thushara Dilshan</p>
+    </footer>
         <script src="userProfile.js"></script>
     </body>
 </html>

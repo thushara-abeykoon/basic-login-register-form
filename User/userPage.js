@@ -20,3 +20,6 @@ if(!userStatus){
 function gotoProfile() {
     window.location.href=`userProfile.html?name=${name}&username=${username}`;
 }
+function logout(){
+    window.location.href='../Form/form.html';
+}
