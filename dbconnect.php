@@ -18,10 +18,10 @@
 
     try {
         if (mysqli_query($conn, $query)) {
-            echo "Database '$database' created successfully.";
+            //echo "Database '$database' created successfully.";
         }
     } catch (Exception $e) {
-        echo "Database Already Exists\n";
+        //echo "Database Already Exists\n";
     }
     
 
@@ -39,7 +39,7 @@
     try {
         mysqli_query($conn, $query);
     } catch (Exception $th) {
-        echo "table already created";
+        //echo "table already created";
     }
     
 
