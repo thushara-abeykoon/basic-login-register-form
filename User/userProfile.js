@@ -30,3 +30,28 @@ function fetchData(){
     nameInput.value = `${name}`;
     return true;
 }
+
+
+let confirm = false;;
+
+function accountDeletion(){
+    var deleteForm = document.getElementById('deleteForm');
+    var deleteErrorDiv = document.getElementById('adminErrorDiv');
+    var confirmBox = document.getElementById('confirm');
+    
+    deleteForm.action = `accountDelete.php?username=${username}`;
+    if(username === 'admin'){
+        deleteErrorDiv.style.display='block';
+    }
+    else{
+        confirmBox.style.display = 'block';
+    }
+}
+
+function invisible(id){
+    document.getElementById(id).style.display="none";
+}
+
+function modifiyAcc(){
+    
+}

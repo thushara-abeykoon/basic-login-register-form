@@ -68,8 +68,12 @@
                 
                     ?>
             </table>
-            <input type="submit" value="Delete" name="deleteBtn" id="deleteBtn">
-            <input type="submit" value="Modify" name="modifyBtn" id="modifyBtn">
+            <form id='deleteForm'action="" method='post' onsubmit = 'return accDeleteFinal()'>
+                <input type="submit" value="Delete" name="deleteBtn" id="deleteBtn">
+            </form>
+            <form action="">
+                <input type="submit" value="Modify" name="modifyBtn" id="modifyBtn">
+            </form>
         </div>
     </main>
     <script src="adminPage.js"></script>

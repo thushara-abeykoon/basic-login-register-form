@@ -65,8 +65,7 @@
                 
                     ?>
             </table>
-            <input type="submit" value="Delete" name="deleteBtn" id="deleteBtn">
-            <input type="submit" value="Modify" name="modifyBtn" id="modifyBtn">
+            <button onclick='accDeleteFinal()'>Delete</button>
         </div>
     </main>
     <script src="adminPage.js"></script>

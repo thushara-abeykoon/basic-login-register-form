@@ -75,7 +75,48 @@ function gotoProfile(){
     window.location.href = `../User/userProfile.html?name=${name}&username=${username}`;
 }
 
+function accDeleteFinal(){
+    let userNames = accDelete();
+    for(let elm of userNames){
+        if(elm === 'admin'){
+            alert('User admin cannot be deleted!');
+            continue;
+        }
+        window.open(`../User/accountDelete.php?username=${elm}`);
+    }
+}
 
+function accDelete(){
+    let checkArr = getCheckBoxes();
+    let userNames = [];
+    for(let elm in checkArr){
+        userNames[elm] = getUserName('row'+getRowNumber(checkArr[elm]));
+    }
+    return userNames;
+}
   
+function getCheckBoxes(){
+    let checkArr = [];
+    let dataTable = document.getElementById('tableFetch');
+    let checkBoxes = dataTable.querySelectorAll('input[type=checkbox]');
+    let x = 0;
+    for( let elm of checkBoxes){
+        if(elm.checked){
+            checkArr[x++] = elm.id;
+        }
+    }
+   return checkArr;
+}
+
+function getRowNumber(checkBoxId){
+    return checkBoxId.substring(2,3);
+}
+
+function getUserName(rowid){
+    let row = document.getElementById(rowid);
+    let tdChild = row.querySelectorAll('td');
+
+    return tdChild[1].innerHTML;
+}
   
   

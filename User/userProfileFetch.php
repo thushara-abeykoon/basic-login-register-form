@@ -38,35 +38,42 @@
                     <td>First Name</td>
                     <form action="">
                     <td>: <input type="text" name="fname" id="fname" class="textInput" value="<?php echo $row['fname'];?>"></td>
-                    <td><input type="submit" value="Modify" class="modify"></td>
-                    </form>
+                    
                 </tr>
                  <tr>
                     <td>Last Name</td>
-                    <form action="">
                     <td>: <input type="text" name="lname" id="lname" class="textInput" value="<?php echo $row['lname'];?>"></td>
-                    <td><input type="submit" value="Modify" class="modify"></td>
-                    </form>
+                    
                 </tr>
                  <tr>
                     <td>Email</td>
-                    <form action="">
                     <td>: <input type="email" name="email" id="email" class="textInput" value="<?php echo $row['email'];?>"></td>
-                    <td><input type="submit" value="Modify" class="modify"></td>
-                    </form>
+                    
                 </tr>
                  <tr>
                     <td>Date of Birth</td>
-                    <form action="">
                     <td>: <input type="date" name="dob" id="dob" class="textInput" value="<?php echo $row['dob'];?>"></td>
-                    <td><input type="submit" value="Modify" class="modify"></td>
-                    </form>
+                    
                 </tr>
             </table>
+
             <div>
-                <form action="" onsubmit="" method="post">
-                    <input type="submit" value="Delete Your Account">
+                <input type="submit" value="Modify" class="modify">
                 </form>
+                <button onclick='accountDeletion()' id="deleteBtn">Delete Your Account</button>
+                
+            </div>
+            <div id='adminErrorDiv' style="display:none;" >
+                <p>Admin account can not be deleted!</p>
+                <button onclick="invisible('adminErrorDiv')">OK</button>
+            </div>
+            <div id='confirm' style="display:none;" >
+                <p>Are you sure?</p>
+                <form action="" onsubmit="return  " method="post" id="deleteForm">
+                    <input type="submit" value="Yes">
+                </form>
+                
+                <button onclick='invisible("confirm")'>No</button>
             </div>
         </main>
         <script src="userProfile.js"></script>
