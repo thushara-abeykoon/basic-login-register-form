@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome!</title>
+    <link rel="stylesheet" href="userPage.css">
 </head>
 <body>
-    <h1>Hi this is user page</h1>
+    <header id="header">
+        <h1 id="welcomeHeader">Welcome <span id="userName"></span></h1>
+    </header>
+    <nav id="navigation">
+        <ul>
+            <li onclick="gotoProfile()">Your Profile</li>
+        </ul>
+    </nav>
+    <script src="userPage.js"></script>
 </body>
 </html>

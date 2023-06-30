@@ -12,7 +12,7 @@
         }
         else{
             
-            header("Location:../User/userPage.html?name=$name&username=&username");
+            header("Location:../User/userPage.html?name=$name&username=$username");
             exit();
         }     
    }

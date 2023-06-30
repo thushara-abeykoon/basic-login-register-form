@@ -17,12 +17,12 @@
     </nav>
     <main>
         <div id="fetch">
-            <form action="adminGetName.php" method="POST">
+            <form action="adminGetName.php?username=admin&name=Thushara" method="POST">
                 <label for="user">Enter Username : </label>
                 <input type="text" name="user" id="user" class="textInput">
                 <input type="submit" value="Fetch" name="fetchBtn" id="fetchBtn" onclick="fetchData()">
             </form>
-            <a href="adminPage.php"><input type="submit" value="Fetch All" name="fetchAllBtn" id="fetchAllBtn"></a>
+            <a href="adminPage.php?username=admin&name=Thushara"><input type="submit" value="Fetch All" name="fetchAllBtn" id="fetchAllBtn"></a>
         </div>  
         
         

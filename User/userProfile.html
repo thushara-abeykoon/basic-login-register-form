@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi</title>
+    <title></title>
+    <link rel="stylesheet" href="userProfile.css">
 </head>
-<body>
-    <h1>Hi this is user profile</h1>
-</body>
+    <body>
+        <header id="header">
+            <h1 id="welcomeHeader">Welcome <span id="userName"></span></h1>
+        </header>
+        <main>
+            <form onsubmit="return fetchData()" action="userProfileFetch.php" method="get">
+                <input type="text" name="username" id="username" style="display: none;">
+                <input type="text" name="name" id="name" style="display: none;">
+                <input type="submit" value="Fetch Your Data" id="fetchBtn">
+            </form>
+            
+        </main>
+        <script src="userProfile.js"></script>
+    </body>
 </html>
