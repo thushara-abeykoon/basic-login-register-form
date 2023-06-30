@@ -52,6 +52,16 @@ function invisible(id){
     document.getElementById(id).style.display="none";
 }
 
-function modifiyAcc(){
-    
+function modifyAcc(){
+    let modifyForm = document.getElementById('modifyForm');
+    var childElms = document.querySelectorAll('input[type=text], input[type=date], input[type=email]');
+
+    modifyForm.action = `accountModify.php?username=${username}`
+    for(let x of childElms){
+        if (x.value==='') {
+            document.getElementById("insertError").style.display = "block";
+            return false;  
+        }
+    }
+    return true;
 }

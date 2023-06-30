@@ -36,7 +36,7 @@
                 </tr> 
                 <tr>
                     <td>First Name</td>
-                    <form action="">
+                    <form action="accountModify.php" method='POST' onsubmit="return modifyAcc()" id='modifyForm'>
                     <td>: <input type="text" name="fname" id="fname" class="textInput" value="<?php echo $row['fname'];?>"></td>
                     
                 </tr>
@@ -58,10 +58,15 @@
             </table>
 
             <div>
-                <input type="submit" value="Modify" class="modify">
+                
+                    <input type="submit" value="Modify" id="modify"></form>
                 </form>
                 <button onclick='accountDeletion()' id="deleteBtn">Delete Your Account</button>
                 
+            </div>
+            <div id="insertError" style="display:none;">
+                <p>Empty fields detected!</p>
+                <input type="submit" value="OK" id="ok2" onclick="invisible('insertError')">
             </div>
             <div id='adminErrorDiv' style="display:none;" >
                 <p>Admin account can not be deleted!</p>
@@ -69,7 +74,7 @@
             </div>
             <div id='confirm' style="display:none;" >
                 <p>Are you sure?</p>
-                <form action="" onsubmit="return  " method="post" id="deleteForm">
+                <form action="" method="post" id="deleteForm">
                     <input type="submit" value="Yes">
                 </form>
                 

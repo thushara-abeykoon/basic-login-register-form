@@ -41,6 +41,5 @@
     } catch (Exception $th) {
         //echo "table already created";
     }
-    
 
 ?>

@@ -54,10 +54,7 @@ input[type=submit],button{
     margin: auto;
     width: 200px;
 }
-button:hover{
-    color: white;
-    background-color: rgb(77, 77, 77);
-}
+
 
 main table,#adminErrorDiv,#confirm {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,8 +69,8 @@ main table,#adminErrorDiv,#confirm {
     text-align: left;
 }
 
-.modify{
-    margin-bottom: 15px;
+#modify{
+    margin-bottom: 10px;
 }
 main div{
     margin: auto;
@@ -85,6 +82,10 @@ main div{
     background-color: rgb(252, 119, 119);
 }
 
+#modify:hover{
+    color: white;
+    background-color: rgb(77, 77, 77);
+}
 .textInput{
     width: 200px; 
     height: 20px;
@@ -124,4 +125,28 @@ button{
     width: 100px;
     margin: 10px;
     
+}
+
+main div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(223, 223, 223);
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px rgb(223, 223, 223) ;
+    border-radius: 10px;
+    color: rgb(116, 116, 116);
+    margin-top: 5%;
+}
+
+#insertError{
+    width: 500px;
+    color: rgb(248, 84, 84);
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(255, 163, 163);
+    display: none;
+    margin-bottom: 8px;
+    position: fixed;
+    top: 25%;
+    left: 32%;
+    padding-bottom: 20px;
 }
